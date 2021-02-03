@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-03T18:54:23.915Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="C_LWyh6RrZ9uYcwTER0r" version="14.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-03T18:56:22.878Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="tyXpeg7yh-O-5ZX3dS5f" version="14.2.7" type="github">
   <diagram id="0C-BduzxQu7_7mBowT3Q" name="Page-1">
     <mxGraphModel dx="1426" dy="310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -191,7 +191,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="1F3cxziVM66xHLtwTBGn-60" value="Builder Method" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;" vertex="1" parent="1">
-          <mxGeometry x="-820" y="760" width="580" height="270" as="geometry" />
+          <mxGeometry x="-820" y="760" width="460" height="270" as="geometry" />
         </mxCell>
         <mxCell id="1F3cxziVM66xHLtwTBGn-61" value="Empleado" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="-770" y="830" width="110" height="104" as="geometry" />
@@ -206,7 +206,7 @@
           <mxGeometry y="78" width="110" height="26" as="geometry" />
         </mxCell>
         <mxCell id="1F3cxziVM66xHLtwTBGn-65" value="Builder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-585" y="780" width="125" height="150" as="geometry" />
+          <mxGeometry x="-550" y="784" width="125" height="150" as="geometry" />
         </mxCell>
         <mxCell id="1F3cxziVM66xHLtwTBGn-66" value="- nombre: String&#xa;- edad : int&#xa;- area : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1F3cxziVM66xHLtwTBGn-65">
           <mxGeometry y="26" width="125" height="44" as="geometry" />
@@ -216,6 +216,28 @@
         </mxCell>
         <mxCell id="1F3cxziVM66xHLtwTBGn-68" value="+ setNombre: Builder&#xa;+ setEdad: Builder&#xa;+ setArea() : Builder&#xa;+build() : Empleado" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1F3cxziVM66xHLtwTBGn-65">
           <mxGeometry y="78" width="125" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="1F3cxziVM66xHLtwTBGn-69" value="ServicioEmpleado" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-655" y="970" width="245" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="1F3cxziVM66xHLtwTBGn-70" value="+ generarPlanilla(Requerimiento req):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1F3cxziVM66xHLtwTBGn-69">
+          <mxGeometry y="26" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1F3cxziVM66xHLtwTBGn-71" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.519;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.005;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1F3cxziVM66xHLtwTBGn-70" target="1F3cxziVM66xHLtwTBGn-64">
+          <mxGeometry x="0.2259" y="17" width="160" relative="1" as="geometry">
+            <mxPoint x="-620" y="1020" as="sourcePoint" />
+            <mxPoint x="-460" y="1020" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-713" y="997" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1F3cxziVM66xHLtwTBGn-72" value="" style="endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-660" y="880" as="sourcePoint" />
+            <mxPoint x="-550" y="880" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
